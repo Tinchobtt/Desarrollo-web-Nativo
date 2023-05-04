@@ -1,64 +1,64 @@
-#contacto{
-    display: none;
-}
 .redirect-container{
     @include df-jc-(space-around);
     align-items: flex-start;
+    .redirect{
+        padding: 1em 1.5em;
+        border-radius: 10px;
+        box-shadow: -5px 5px 10px var(--black);
+        a{
+            text-decoration: none;
+        }
+        h3{
+            font-size: 18px;
+            color: var(--sand);
+        }
+    }
 }
-.redirect{
-    padding: 1em 1.5em;
-    border-radius: 10px;
-    box-shadow: -5px 5px 10px var(--black);
-    a{
-        text-decoration: none;
-    }
-    h3{
-        font-size: 18px;
-        color: var(--sand);
-    }
+#contacto{
+    display: none;
 }
 .contacto{
     @include df-jc-(space-evenly);
     align-items: start;
     position: relative;
-}
-.form{
-    @include df-column-ai-(center);
-}
-.form-title{
-    text-align: center;
-    color: var(--sand);
-    font-size: 28px;
-    margin-bottom: 2em;
-}
-input, textarea{
-    display: block;
-    background-color: #1F1F1F;
-    border: none;
-    border-radius: 5px;
-    color: var(--sand);
-    width: 80%;
-    height: 40px;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    cursor: pointer;
-}
-input[type="submit"]{
-    margin-top: 2em;
-    width: 40%;
-    padding-left: 0;
-    font-size: 16px;
-    transition: all .5s;
-}
-input[type="date"]{
-    color: var(--grey);
-}
-textarea{
-    height: 100px;
-    resize: none;
-}
-input:focus, textarea:focus{
-    outline: 1px solid var(--sand);
+    .form-title{
+        text-align: center;
+        color: var(--sand);
+        font-size: 28px;
+        margin-bottom: 2em;
+    }
+    .form{
+        @include df-column-ai-(center);
+        input, textarea{
+            display: block;
+            background-color: #1F1F1F;
+            border: none;
+            border-radius: 5px;
+            color: var(--sand);
+            width: 80%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            cursor: pointer;
+            &:focus{
+                outline: 1px solid var(--sand);
+            }
+        }
+        input[type="submit"]{
+            margin-top: 2em;
+            width: 40%;
+            padding-left: 0;
+            font-size: 16px;
+            transition: all .5s;
+        }
+        input[type="date"]{
+            color: var(--grey);
+        }
+        textarea{
+            height: 100px;
+            resize: none;
+        }
+    }
 }
 #contacto-footer{
     position: absolute; 

@@ -2,38 +2,39 @@
     @include dg-tc-(3, 1fr);
     width: 100%;
     padding: 2em 1em;
-}
-.nav-footer{
-    @include df-column-jc-ai-(center, center);
-}
-.nav-footer-item{
-    list-style-type: none;
-    margin-bottom: .5em;
-}
-.nav-footer-link{
-    text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: var(--sand);
-    opacity: .5;
-}
-.logo-footer-container{
-    justify-self: center;
-    align-self: center;
-    img{
-        width: 6em;
-        opacity: 50%;
+    .nav-footer{
+        @include df-column-jc-ai-(center, center);
+        .nav-footer-item{
+            list-style-type: none;
+            margin-bottom: .5em;
+            .nav-footer-link{
+                text-decoration: none;
+                font-size: 18px;
+                letter-spacing: 1px;
+                color: var(--sand);
+                opacity: .5;
+            }
+        }
     }
-}
-.contacto-container{
-    @include df-column-jc-ai-(center, center);
-}
-.red-item{
-    list-style: none;
-    margin: 1em;
-}
-.red-link{
-    text-decoration: none;
-    color: var(--sand);
-    opacity: .5;
+    .logo-footer-container{
+        justify-self: center;
+        align-self: center;
+        img{
+            width: 6em;
+            opacity: 50%;
+        }
+    }
+    .contacto-container{
+        @include df-column-jc-ai-(center, center);
+        .red-item{
+            list-style: none;
+            margin: 1em;
+            .red-link{
+                text-decoration: none;
+                font-size: 22px;
+                color: var(--sand);
+                opacity: .5;
+            }
+        }
+    }
 }
