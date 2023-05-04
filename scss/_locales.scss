@@ -1,0 +1,43 @@
+.locales-container{
+    @extend .cards-container;
+    .local{
+        @extend .card;
+        .local-img{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 75%;
+            border-radius: 15px 15px 0 0;
+            background-color: var(--box);
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 15px 15px 0 0;
+                object-fit: cover;
+            }
+        }
+        .local-description{
+            width: 100%;
+            height: 25%;
+            padding: 1em;
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                color: var(--sand);
+                h3{
+                    font-size: 18px;
+                    color: var(--sand);
+                }
+                p{
+                    font-size: 14px;
+                    color: var(--sand);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+/*TRAZA*/
+.traza{
+    display: flex;
+    padding: 2em 1em;
+    .fa-solid{
+        margin: 0 1em;
+    }
+}
+.traza p, .traza .fa-solid{
+    color: var(--sand);
+}

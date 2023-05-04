@@ -1,0 +1,114 @@
+@media (min-width: 480px){
+    .redirect{
+        width: 30%;
+        text-align: center;
+    }
+}
+@media (min-width: 768px){
+    .logo-footer-container img{
+        width: 8em;
+    }
+    .nav-footer-link{
+        font-size: 18px;
+    }
+    .redes{
+        display: flex;
+    }
+    .red-link{
+        font-size: 24px;
+    }
+}
+@media (min-width: 1024px){
+    section{
+        padding: 2em;
+    }
+    .logo-container{
+        width: 6em;
+        height: 6em;
+        margin-left: 2em;
+    }
+    .logo-container img, .logo-footer-container img{
+        transition: transform .5s;
+    }
+    .logo-container:hover img, .logo-footer-container:hover img{
+        transform: scale(1.2,1.2);
+    }
+    .card:hover{
+        transform: scale(1.1,1.1);
+    }
+    .menu{
+        margin: 0;
+        margin-right: 2em;
+        height: 100%;
+    }
+    .menu .fa-solid{
+        display: none;
+    }
+    .nav{
+        position: initial;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    .nav-bar{
+        display: flex;
+        align-items: end;
+    }
+    .nav-item{
+        padding: 0;
+        margin: 0 0 .5em 2em;
+    }
+    .nav-link{
+        position: relative;
+        border-bottom: none;
+    }
+    .nav-link::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: var(--sand);
+        transition: width .5s;
+    }
+    .nav-item:hover .nav-link::after{
+        width: 100%;
+    }
+    .nav-footer-link, .red-link{
+        transition: color .5s;
+    }
+    .nav-footer-link:hover, .red-link:hover{
+        color: var(--sand-hover);
+    }
+    .portada{
+        height: 300px;
+    }
+    .redirect-container{
+        display: none;
+    }
+    #contacto{
+        display: flex;
+    }
+    .form-container{
+        width: 50%;
+        padding: 2em;
+    }
+    .line{
+        position: absolute;
+        height: 90%;
+        border: 1px solid #0000003f;
+        box-shadow: 0 0 5px #0000006d;
+    }
+    #contacto-footer{
+        position: initial;
+    }
+    .boxes-container, .locales-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .food-box, .local{
+        margin: 2em;
+    }
+    input[type="submit"]:hover{
+        background-color: #ead7c874;
+    }
+}

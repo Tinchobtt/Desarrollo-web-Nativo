@@ -1,0 +1,67 @@
+.header{
+    @include dg-tc-(2, 1fr);
+    width: 100%;
+    padding: 1em;
+}
+.logo-container{
+    align-self: center;
+    width: 5em;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-delay: 1s;
+    animation: spin 3s;
+    img{
+        width: 100%;
+    }
+}
+.link-logo{
+    @include df-ai-(center);
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    justify-self: end;
+    align-self: center;
+    margin: 1em;
+    overflow-x: hidden;
+    .fa-solid{
+        font-size: 3em;
+        color: var(--sand);
+        cursor: pointer;
+    }
+}
+#btn-menu{
+   display: none;
+}
+.nav{
+    position: absolute;
+    top: 7em;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity .7s;
+    overflow-x: hidden;
+    background-color: var(--back);
+}
+#btn-menu:checked ~ .nav{
+    opacity: 1;
+}
+.nav-bar{
+    width: 100%;
+    height: 100%;
+}
+.nav-item{
+    list-style-type: none;
+    padding: 2em 2em;
+}
+.nav-link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--sand);
+    border-bottom: 1px solid var(--sand);
+}
+#active{
+    color: var(--sand-hover);
+    font-weight: bold;
+}

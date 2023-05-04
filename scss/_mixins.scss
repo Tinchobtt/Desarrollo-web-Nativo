@@ -1,0 +1,14 @@
+@mixin d-flex{
+    display: flex;
+}
+@mixin d-flex-center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin d-flex-center-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
